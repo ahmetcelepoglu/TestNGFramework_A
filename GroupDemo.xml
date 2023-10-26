@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="GroupDemoSuite">
+  <test thread-count="2" parallel="methods" name="GroupDemoTest">
+    <groups>
+		<run>
+			<include name="group1"></include>
+		</run>
+	</groups>
+    
+    <packages>
+      <package name="com.neotech.testcases"/>
+    </packages>
+  </test> <!-- GroupDemoTest -->
+</suite> <!-- GroupDemoSuite -->
